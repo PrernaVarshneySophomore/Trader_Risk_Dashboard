@@ -205,7 +205,7 @@ No database or authentication was implemented because they were not required for
 Clone repository:
 
 
-git clone <repository-url>
+git clone https://github.com/PrernaVarshneySophomore/Trader_Risk_Dashboard.git
 
 
 Install backend dependencies:
