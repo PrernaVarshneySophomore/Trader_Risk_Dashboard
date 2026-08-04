@@ -9,14 +9,14 @@ require("./routes/dashboardRoutes");
 
 const app = express();
 
-app.use(cors());
+// app.use(cors());
 
-// app.use(cors({
-//     origin: [
-//             "http://localhost:5173",
-//             "https://trader-risk-dashboard-prerna.onrender.com/",
-//         ],
-//     }));
+app.use(cors({
+    origin: [
+            "http://localhost:5173",
+            "https://trader-risk-dashboard-prerna.onrender.com/",
+        ],
+    }));
 
 app.use(express.json());
 
