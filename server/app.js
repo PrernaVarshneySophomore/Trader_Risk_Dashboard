@@ -11,7 +11,12 @@ const app = express();
 
 
 
-app.use(cors());
+app.use(cors({
+    origin: [
+            "http://localhost:5173",
+            "https://trader-risk-dashboard-fawn.vercel.app/",
+        ],
+    }));
 
 app.use(express.json());
 
