@@ -1,4 +1,4 @@
-# Trader Risk Dashboard
+# 📊 Trader Risk Dashboard
 
 A full-stack trading risk monitoring dashboard that helps traders track account performance, profitability metrics, and risk exposure.
 
@@ -6,36 +6,68 @@ The dashboard derives all calculations dynamically from trade data and provides 
 
 ---
 
+## Live Demo
+
+- **Frontend:** https://trader-risk-dashboard-prerna.onrender.com
+- **Backend API:** https://trader-risk-dashboard-api.onrender.com/api/dashboard
+
+---
+
 # Screenshots
 
 ## Dashboard Overview
 
+### Laptop View
+
+<p align="center">
+  <img src="./screenshots/laptop-view.png" alt="Laptop View" width="900">
+</p>
+
+
+### Mobile View
+
+<p align="center">
+  <img src="./screenshots/mobile-view.png" alt="Mobile View" width="300">
+</p>
+
+
+
 ### Dark Trading Theme
 
-![Dashboard Dark](./screenshots/dashboard-dark.png)
+<p align="center">
+  <img src="./screenshots/dashboard-dark.png" alt="Dashboard Dark" width="900">
+</p>
 
 
 ### Light Theme
 
-![Dashboard Light](./screenshots/dashboard-light.png)
+<p align="center">
+  <img src="./screenshots/dashboard-light.png" alt="Dashboard Light" width="900">
+</p>
 
 
 
 ## Risk Management Indicator
 
-![Risk Status](./screenshots/risk-status.png)
+<p align="center">
+  <img src="./screenshots/risk-status.png" alt="Risk Status" width="900">
+</p>
 
 
 
 ## Equity Curve
 
-![Equity Curve](./screenshots/equity-curve.png)
+<p align="center">
+  <img src="./screenshots/equity-curve.png" alt="Equity Curve" width="900">
+</p>
 
 
 
 ## Trade History
 
-![Trade History](./screenshots/trade-history.png)
+<p align="center">
+  <img src="./screenshots/trade-history.png" alt="Trade History" width="900">
+</p>
 
 
 ---
@@ -164,38 +196,29 @@ No database or authentication was implemented because they were not required for
 
 ---
 
-# Project Architecture
+## Project Architecture
 
-             React Dashboard
-
-                   |
-                   |
-              Axios API Request
-
-                   |
-                   |
-
-            Express Backend
-
-                   |
-                   |
-
-         Dashboard Controller
-
-                   |
-                   |
-
-         Dashboard Service
-
-                   |
-                   |
-
-          Calculation Utilities
-
-                   |
-                   |
-
-              Mock Data
+```text
+React Dashboard
+       │
+       ▼
+Axios API Request
+       │
+       ▼
+Express Backend
+       │
+       ▼
+Dashboard Controller
+       │
+       ▼
+Dashboard Service
+       │
+       ▼
+Calculation Utilities
+       │
+       ▼
+Mock Data
+```
 
 ---
 
@@ -318,77 +341,38 @@ With additional time, I would improve the dashboard by adding:
 Trader-Risk-Dashboard/
 │
 ├── client/
-│   ├── public/
 │   ├── src/
-│   │   ├── components/
-│   │   │   ├── AccountCard.jsx
-│   │   │   ├── DashboardSkeleton.jsx
-│   │   │   ├── EquityChart.jsx
-│   │   │   ├── ErrorState.jsx
-│   │   │   ├── Header.jsx
-│   │   │   ├── PerformanceCard.jsx
-│   │   │   ├── RiskIndicator.jsx
-│   │   │   ├── RiskStatusBadge.jsx
-│   │   │   ├── SectionTitle.jsx
-│   │   │   ├── ThemeToggle.jsx
-│   │   │   ├── TradesTable.jsx
-│   │   │   └── UserProfile.jsx
-│   │   │
-│   │   ├── hooks/
-│   │   │   └── useDashboard.js
-│   │   │
-│   │   ├── pages/
-│   │   │   └── Dashboard.jsx
-│   │   │
-│   │   ├── services/
-│   │   │   └── api.js
-│   │   │
-│   │   ├── utils/
-│   │   │   └── format.js
-│   │   │
-│   │   ├── App.jsx
-│   │   ├── index.css
-│   │   └── main.jsx
-│   │
-│   ├── package.json
-│   └── vite.config.js
+│   ├── public/
+│   └── package.json
 │
 ├── server/
 │   ├── controllers/
-│   │   └── dashboardController.js
-│   │
-│   ├── data/
-│   │   └── trades.js
-│   │
 │   ├── routes/
-│   │   └── dashboardRoutes.js
-│   │
 │   ├── services/
-│   │   └── dashboardService.js
-│   │
 │   ├── utils/
-│   │   └── riskCalculations.js
-│   │
-│   ├── app.js
-│   ├── server.js
+│   ├── data/
 │   └── package.json
 │
 ├── screenshots/
-│   ├── dashboard-dark.png
-│   ├── dashboard-light.png
-│   ├── risk-status.png
-│   ├── equity-curve.png
-│   └── trade-history.png
-│
 ├── README.md
-├── .gitignore
-└── package.json (optional, if using a root package)
+└── .gitignore
 ```
 
+---
+
+## Why This Architecture?
+
+Although the assignment allowed using mock data without a database, I chose to build the project using a clean client-server architecture. Business logic is handled entirely in the Express backend, while the React frontend focuses only on presentation. This separation improves maintainability, promotes code reuse, and reflects real-world full-stack development practices.
 
 ---
 
 # Author
 
 Prerna Varshney
+
+---
+
+## License
+
+This project was developed as part of a Full Stack Developer assignment and is intended for educational and portfolio purposes.
 
