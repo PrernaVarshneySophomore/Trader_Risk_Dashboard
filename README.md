@@ -4,7 +4,6 @@ A full-stack trading risk monitoring dashboard that helps traders track account 
 
 The dashboard derives all calculations dynamically from trade data and provides a quick overview of whether the trader is operating safely within account limits.
 
----
 
 ## Live Demo
 
@@ -220,7 +219,6 @@ Calculation Utilities
 Mock Data
 ```
 
----
 
 ## Installation
 
@@ -246,7 +244,6 @@ cd client
 
 npm install
 
----
 
 ## Running Application
 
@@ -358,7 +355,6 @@ Trader-Risk-Dashboard/
 └── .gitignore
 ```
 
----
 
 ## Why This Architecture?
 
@@ -370,7 +366,6 @@ Although the assignment allowed using mock data without a database, I chose to b
 
 Prerna Varshney
 
----
 
 ## License
 
